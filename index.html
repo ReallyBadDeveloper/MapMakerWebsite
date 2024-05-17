@@ -1,11 +1,39 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <canvas id="maincanvas"></canvas>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="icon.ico">
+    <title>Map Maker</title>
+  </head>
+  <body>
 
-        <script src="script.js"></script>
-    </body>
+    <canvas id="maincanvas"></canvas>
+
+    <div id="editmenu">
+        <h1>Edit</h1>
+        <label>ID: </label><input id="id"><br>
+        <label>Size: </label><input type="range" id="indexsize" min="10" max="200">
+    </div>
+
+    <div class="header">
+        <button class="dropdown">
+          File
+          <div class="dropdown-content">
+            <a href="#">Save</a>
+            <a href="#">Save As</a>
+            <a href="#">Export</a>
+          </div></button
+        ><button class="dropdown">
+          Edit
+          <div class="dropdown-content">
+            <a href="#">Tools</a>
+            <a href="#">Delete</a>
+            <a href="#">New...</a>
+          </div>
+        </button>
+      </div>
+
+    <!-- scrept yeay :3333 -->
+    <script src="script.js"></script>
+  </body>
 </html>

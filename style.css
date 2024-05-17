@@ -1,5 +1,10 @@
-body {
-    background-image: url('bg.png');
+@font-face {
+    font-family: "SF Arch Rival";
+    src: url("SFarchrival.ttf")
+      format("truetype");
+  }
+  body {
+    background: url('canvasbg.png');
     background-size: cover;
     height: 100vh;
     padding: 0;
@@ -9,7 +14,90 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-#maincanvas {
+    font-family: "SF Arch Rival", sans-serif;
+  }
+  
+  .header {
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #2b515f;
+    padding-left: 10px;
+  }
+  
+  .header button {
+    height: 100%;
+    background-color: inherit;
+    border: none;
+    color: white;
+    padding: 10px;
+    font-family: "SF Arch Rival", sans-serif;
+  }
+  
+  .header button:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  
+  #maincanvas {
     border-radius: 10px;
-}
+  }
+  
+  .contextmenu {
+    border-radius: 10px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    box-shadow: 0px 10px 15px 5px rgba(0, 0, 0, 0.3);
+    background-color: #2b515f;
+  }
+
+  #editmenu {
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0px 10px 15px 5px rgba(0, 0, 0, 0.3);
+    background-color: #2b515f;
+    color: white;
+    position: absolute;
+    top: 80px;
+    left: 40px;
+  }
+
+  #editmenu h1, #editmenu h2, #editmenu h3, #editmenu h4, #editmenu h5, #editmenu h6 {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* thanks w3schools */
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #dddddd;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+  }
+  
